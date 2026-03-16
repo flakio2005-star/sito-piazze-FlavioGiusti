@@ -1,0 +1,606 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background-color:#f5f5f5;
+
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+header{
+background-color:#2f7d32;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+main{
+flex:1;
+padding:40px;
+text-align:center;
+}
+
+main a{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background-color:#2f7d32;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+footer{
+background-color:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+/* hamburger icon */
+
+.hamburger{
+font-size:30px;
+cursor:pointer;
+display:block;
+text-align:center;
+margin-top:10px;
+}
+
+/* nasconde la checkbox */
+
+#menu-toggle{
+display:none;
+}
+
+/* menu nascosto */
+
+.menu{
+display:none;
+flex-direction:column;
+background-color:#2f7d32;
+}
+
+/* link menu */
+
+.menu a{
+color:white;
+padding:10px;
+text-decoration:none;
+border-top:1px solid rgba(255,255,255,0.3);
+}
+
+/* quando clicchi hamburger */
+
+#menu-toggle:checked + .hamburger + .menu{
+display:flex;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px; /* Altezza fissa, così il contenitore c’è sempre */
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;          /* Riempie il contenitore */
+  object-fit: contain;    /* Non taglia l’immagine, la scala proporzionata */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 16s infinite;
+}
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 4s; }
+.slideshow img:nth-child(3) { animation-delay: 8s; }
+.slideshow img:nth-child(4) { animation-delay: 12s; }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* pagina piazze*/
+.griglia-piazze{
+
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:30px;
+
+max-width:800px;
+margin:40px auto;
+
+}
+
+.card{
+
+text-decoration:none;
+color:black;
+text-align:center;
+
+}
+
+.card img{
+
+width:100%;
+height:220px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+}
+
+.card p{
+
+margin-top:10px;
+font-weight:bold;
+
+}
+
+
+/* stesicoro */
+.pagina-piazza{
+
+max-width:900px;
+margin:40px auto;
+text-align:left;
+
+}
+
+.immagine-piazza{
+
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:8px;
+margin:20px 0;
+
+}
+
+.pagina-piazza h3{
+
+margin-top:30px;
+
+}
+
+.pagina-piazza ul{
+
+margin-top:10px;
+padding-left:20px;
+
+}
+
+
+/* piazza Cairoli */
+/* Corpo della pagina */
+
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background-color:#f4f4f4;
+
+}
+
+
+/* Header */
+
+header{
+
+background-color:#333;
+color:white;
+padding:15px;
+text-align:center;
+position:relative;
+
+}
+
+
+/* Menu hamburger */
+
+.hamburger{
+
+font-size:30px;
+cursor:pointer;
+position:absolute;
+right:20px;
+top:15px;
+
+}
+
+
+/* Nasconde il checkbox */
+
+#menu-toggle{
+
+display:none;
+
+}
+
+
+/* Menu */
+
+.menu{
+
+display:none;
+flex-direction:column;
+background-color:#444;
+position:absolute;
+top:60px;
+right:20px;
+padding:10px;
+border-radius:6px;
+
+}
+
+
+/* Link del menu */
+
+.menu a{
+
+color:white;
+text-decoration:none;
+padding:8px;
+
+}
+
+.menu a:hover{
+
+background-color:#666;
+
+}
+
+
+/* Mostra il menu quando clicchi */
+
+#menu-toggle:checked + .hamburger + .menu{
+
+display:flex;
+
+}
+
+
+/* Pagina piazza */
+
+.pagina-piazza{
+
+max-width:900px;
+margin:40px auto;
+padding:20px;
+background:white;
+border-radius:8px;
+
+}
+
+
+/* Immagine piazza */
+
+.immagine-piazza{
+
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:8px;
+margin:20px 0;
+
+}
+
+
+/* Titoli */
+
+.pagina-piazza h3{
+
+margin-top:30px;
+
+}
+
+
+/* Lista attività */
+
+.pagina-piazza ul{
+
+padding-left:20px;
+
+}
+
+
+/* Footer */
+
+footer{
+
+background-color:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+
+}
+
+
+/* piazza Pretoria */
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background-color:#f4f4f4;
+
+}
+
+header{
+
+background-color:#333;
+color:white;
+padding:15px;
+text-align:center;
+position:relative;
+
+}
+
+.hamburger{
+
+font-size:30px;
+cursor:pointer;
+position:absolute;
+right:20px;
+top:15px;
+
+}
+
+#menu-toggle{
+
+display:none;
+
+}
+
+.menu{
+
+display:none;
+flex-direction:column;
+background-color:#444;
+position:absolute;
+top:60px;
+right:20px;
+padding:10px;
+border-radius:6px;
+
+}
+
+.menu a{
+
+color:white;
+text-decoration:none;
+padding:8px;
+
+}
+
+.menu a:hover{
+
+background-color:#666;
+
+}
+
+#menu-toggle:checked + .hamburger + .menu{
+
+display:flex;
+
+}
+
+.pagina-piazza{
+
+max-width:900px;
+margin:40px auto;
+padding:20px;
+background:white;
+border-radius:8px;
+
+}
+
+.immagine-piazza{
+
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:8px;
+margin:20px 0;
+
+}
+
+.pagina-piazza h3{
+
+margin-top:30px;
+
+}
+
+.pagina-piazza ul{
+
+padding-left:20px;
+
+}
+
+footer{
+
+background-color:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+
+}
+
+
+/* piazza Pirandello */
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background-color:#f4f4f4;
+
+}
+
+header{
+
+background-color:#333;
+color:white;
+padding:15px;
+text-align:center;
+position:relative;
+
+}
+
+.hamburger{
+
+font-size:30px;
+cursor:pointer;
+position:absolute;
+right:20px;
+top:15px;
+
+}
+
+#menu-toggle{
+
+display:none;
+
+}
+
+.menu{
+
+display:none;
+flex-direction:column;
+background-color:#444;
+position:absolute;
+top:60px;
+right:20px;
+padding:10px;
+border-radius:6px;
+
+}
+
+.menu a{
+
+color:white;
+text-decoration:none;
+padding:8px;
+
+}
+
+.menu a:hover{
+
+background-color:#666;
+
+}
+
+#menu-toggle:checked + .hamburger + .menu{
+
+display:flex;
+
+}
+
+.pagina-piazza{
+
+max-width:900px;
+margin:40px auto;
+padding:20px;
+background:white;
+border-radius:8px;
+
+}
+
+.immagine-piazza{
+
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:8px;
+margin:20px 0;
+
+}
+
+.pagina-piazza h3{
+
+margin-top:30px;
+
+}
+
+.pagina-piazza ul{
+
+padding-left:20px;
+
+}
+
+footer{
+
+background-color:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+
+}
+
+
+/* adattabilità pagina */
+img{
+
+max-width:100%;
+height:auto;
+
+}
+.pagina-piazza{
+
+max-width:900px;
+width:90%;
+margin:40px auto;
+padding:20px;
+background:white;
+border-radius:8px;
+
+}
+@media (max-width:768px){
+
+header h1{
+
+font-size:20px;
+
+}
+
+.hamburger{
+
+font-size:26px;
+
+}
+
+.pagina-piazza{
+
+padding:15px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
+
+}
